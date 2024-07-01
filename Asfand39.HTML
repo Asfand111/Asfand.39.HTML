@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            background-color: black;
+            color: aliceblue;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- browser events:
+    click
+    context
+    event fire
+    mouse over
+    mouse out
+    mouse down 
+    mouse move -->
+    <!-- submit
+    focud
+    document/loaded
+    transitonend -->
+    <div class="sont">
+        <h1>This is a heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed quidem, sit distinctio ullam, officia
+            quo error ratione voluptate velit odit doloremque quos molestias non labore eos debitis perferendis quisquam
+            iusto rerum laboriosam nobis, nemo pariatur nisi. Laboriosam esse nulla beatae numquam minus fuga sint fugit
+            maxime nam. Consequatur laudantium ex praesentium necessitatibus corporis illum amet aliquam reprehenderit
+            iusto, aut neque rem quaerat, fugiat pariatur deleniti esse? Accusamus fuga corrupti quaerat nisi adipisci
+            voluptate rem vitae sapiente illum obcaecati quae voluptatibus fugiat sint possimus eligendi, assumenda
+            distinctio laudantium reiciendis aliquam atque non. Ex quidem, architecto vitae ab quibusdam dicta alias
+            ratione nesciunt iusto maxime ipsam saepe quod adipisci fuga, earum, esse cum quaerat veritatis. Quam
+            expedita animi, ullam est modi nulla rerum repudiandae iste nihil minus quae. Architecto libero illum
+            incidunt eos ducimus beatae asperiores animi, corrupti voluptatem sequi impedit dolores labore ad autem
+            quasi veritatis dolore eum omnis tempora assumenda reprehenderit doloribus? Nihil optio consectetur magni
+            voluptates. Quidem alias iure id voluptas, consequuntur provident quisquam at, fugiat ipsa porro distinctio,
+            veniam repudiandae! Id nulla voluptatum consectetur ratione ad totam rem odit repellat facilis, maiores
+            deserunt quos dolorem minima, quia aspernatur amet aliquam! Animi voluptatum iste asperiores commodi harum
+            quam laudantium dignissimos unde ratione accusamus magnam veritatis sint a, voluptates atque enim minus
+            doloremque iure aliquid inventore facere? Molestiae, facilis explicabo? Earum voluptatem praesentium atque
+            quis sit commodi tempora nesciunt natus eveniet sapiente maxime exercitationem, eos odit eaque incidunt
+            repellat necessitatibus. Incidunt, aspernatur soluta. Cupiditate tempora fugit tempore facere?</p>
+            <button id="btn" onclick="togglehide()">Show/Hide</button>
+            <script>
+
+                let para = document.getElementById('para')
+                para.addEventListener('mouseover', function run(){
+                    console.log('mouse inside')
+                })
+               function togglehide(){
+                let btn = document.getElementById('btn')
+                if (para.style.display != 'none'){
+                    para.style.display = 'none'
+                }
+                
+                else{
+                    para.style.display = 'block'
+
+                }
+               }
+
+                
+            </script>
+    </div>
+</body>
+
+</html>
